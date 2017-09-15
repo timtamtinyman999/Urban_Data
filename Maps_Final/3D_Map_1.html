@@ -24,9 +24,9 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/timtam999/cj6vnehfn8cym2rrqxmer7jbu',
     center: [151.209900, -33.865143],
-    zoom: 12,
+    zoom: 10,
     pitch: 40,
-    bearing: 20
+    bearing: -30
 });
 
 map.on('load', function() {
@@ -47,8 +47,9 @@ map.on('load', function() {
                 // Get the fill-extrusion-color from the source 'color' property.
                 'property': 'perc14-29',
                 "stops": [
-                [0, 'red'],
-                [0.3, 'white']
+                [0, 'black'],
+                [0.15, 'purple'],
+                [0.3, 'orange']
                 ]
             },
             'fill-extrusion-height': {
